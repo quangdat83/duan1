@@ -4,3 +4,7 @@ img:hover{
 img{
     object-fit: cover;
 }
+.cart img{
+    width: 186px;
+    height: 232px;
+}
