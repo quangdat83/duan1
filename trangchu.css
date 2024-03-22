@@ -1,3 +1,10 @@
 img:hover{
     transform: scale(1.1);
 }
+img{
+    object-fit: cover;
+}
+.cart img{
+    width: 186px;
+    height: 232px;
+}
