@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Sản phẩm bạn đặt</title>	
+  <!-- Import Bootstrap and JQuery -->
+  <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+  <script 
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">    
+  </script>        
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <!-- DataTables -->
+  <link rel="stylesheet" 
+    type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css"> 
+  <script type="text/javascript" 
+    charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js">    
+  </script>
+  <!-- My CSS and JQuery -->
+  <link href="./css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="./jquery/index.js"></script> 
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"> 
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-branch" href="trangchu.html">
+        <svg width="100" height="100">
+          <circle cx="50" cy="50" r="50"
+          fill="F1E8D9"></circle>
+          <text fill="#ffffff" font-size="25" x="10" y="65">VOGUE</text>
+      
+      </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Sản phẩm</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Đăng nhập</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="fas fa-cart-plus"></i> Giỏ hàng</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-users"></i> Tai khoan</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container-fluid">
+  <h1 class="display-4 my-4 text-info" align="center">Thông tin sản phẩm bạn chọn</h1>
+  <table class="table table-striped" id="users" style="width: 100%;">
+    <thead >
+      <tr id="list-header">
+        <th scope="col">ID</th>
+        <th scope="col"> Tên sản phẩm</th>
+        <th scope="col"> Giá bán</th>
+        <th scope="col">Size</th>
+        <th scope="col"> Số lượng</th>
+      </tr>
+
+      <tr>
+        <td>01894</td>
+        <td>Áo quây</td>
+        <td>12.000.000VND</td>
+        <td>XS</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>04534</td>
+        <td> Set bò</td>
+        <td>15.000.000VND</td>
+        <td>S</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1894</td>
+        <td>Babby Tee</td>
+        <td>9.000.000VND</td>
+        <td>S</td>
+        <td>1</td>
+      </tr>
+      
+
+    </thead>  
+    <tbody>      
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-primary" id="btnReloadData"> Thanh toán ngay</button>
+</div>
+<div class="container-fluid padding">	
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Contact us</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-google-plus-g"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+</div>	
+<footer>
+	<div class="container-fluid padding">	
+		<div class="row text-center">
+			<div class="col-md-4">
+        <svg width="100" height="100">
+          <circle cx="50" cy="50" r="50"
+          fill="F1E8D9"></circle>
+          <text fill="#ffffff" font-size="25" x="10" y="65">VOGUE</text>
+      
+      </svg>
+				<hr class="light">
+				<p>111-222-3333</p>
+				<p>vogue@gmail.com</p>
+				<p> Mai Dịch - Cầu Giấy - Hà Nội</p>
+			</div>
+			<div class="col-md-4">				
+				<hr class="light">
+				<h5> Giờ làm việc</h5>
+				<hr class="light">
+				<p> Thứ 2 - Thứ 6: 8h00 - 17h00</p>
+				<p> Cuối tuần: 8h00 - 23h00</p>
+			</div>
+			<div class="col-md-4">				
+				<hr class="light">
+				<h5>Sản phẩm độc quyền</h5>
+				<hr class="light">
+				<p> Hàng gia công</p>
+				<p> Thời trang độc quyền</p>
+				<p> Thời trang vì đời sống</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; VOGUE.COM</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>	
