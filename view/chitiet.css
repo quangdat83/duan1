@@ -1,0 +1,36 @@
+main{
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: auto;
+}
+img{
+    border-radius: 3px;
+    object-fit: cover;
+}
+.topmain{
+    height: 70px;
+    background-color: #e9ecef;
+}
+.lead{
+    margin-left: 50px;
+    padding: 5px;
+    display: flex;
+    padding-top: 15px;
+}
+.lead a{
+    padding: 0 5px;
+}
+.lead p{
+    padding: 0 5px;
+}
+.color button{
+    padding: 15px;
+    border-radius: 50px;
+    border: 0;
+    margin: 0 5px;
+}
+.add button{
+    padding: 20px 80px;
+    border: 1px solid;
+    border-radius: 10px;
+}

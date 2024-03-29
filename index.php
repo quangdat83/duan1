@@ -63,12 +63,12 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $checkuser = checkuser($user, $pass);
                 if (is_array($checkuser)) {
                     $_SESSION['user'] = $checkuser;
-                    header("Location:index.php");
+                    header('Location: index.php');
                 } else {
                     $thongbao = "dang nhap khong thanh cong";
                 }
             }
-            include 'view/taikhoan/dangky.php';
+            include 'view/taikhoan/dangnhap.php';
             break;
         case 'edit_taikhoan':
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
@@ -98,7 +98,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'thoat':
             session_unset();
-            header("Location:index.php");
+            header("location: index.php");
             break;
         case 'addtocart':
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
